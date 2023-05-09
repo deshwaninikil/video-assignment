@@ -81,7 +81,6 @@ const videos = [
 var currentVideo = null;
 var iframes = document.getElementsByTagName("iframe");
 
-// Add click event listeners to all video iframes
 for (var i = 0; i < iframes.length; i++) {
   iframes[i].addEventListener("click", function () {
     // Pause any currently playing video
@@ -91,7 +90,7 @@ for (var i = 0; i < iframes.length; i++) {
         "*"
       );
     }
-    // Set the currently playing video to this one
+
     currentVideo = this;
   });
 }
@@ -174,26 +173,24 @@ nextButton.addEventListener("click", () => {
   }
 });
 
-// Listen for search input
 $("#search").on("input", function () {
   var searchQuery = $(this).val().toLowerCase();
   var filteredVideos = videos.filter(function (video) {
     return video.title.toLowerCase().includes(searchQuery);
   });
-  startIndex = 0; // reset startIndex to first page
+  startIndex = 0;
   console.log(filteredVideos);
   renderVideoPage(startIndex, pageSize, filteredVideos);
   renderPagination(startIndex, pageSize, filteredVideos);
 });
 
-// initial page render
 renderVideoPage(startIndex, pageSize, videos);
 renderPagination(startIndex, pageSize, videos);
 
+// -----------------------------------------------------------------------------------------------------------
 // ----------------------------------------------------Start Document Ready-----------------------------------
 // -----------------------------------------------------------------------------------------------------------
 $(document).ready(function () {
-  // -----------------------------------------------------------------------------------------------------------
   // -----------------------------------------------------------------------------------------------------------
 
   $(".closereg").click(function () {
@@ -333,6 +330,7 @@ $(document).ready(function () {
   });
 
   //---------------------------------------------------------------------------------------------------------
+
+  // ----------------------------------------------------End Document Ready-----------------------------------
 });
-// ----------------------------------------------------End Document Ready-----------------------------------
 //---------------------------------------------------------------------------------------------------------

@@ -15,7 +15,10 @@ body {
   box-sizing: border-box;
   outline: none;
 }
-
+.mainContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+}
 a:focus,
 a:focus {
   outline: none;
@@ -123,79 +126,6 @@ label {
 
 .clearboth {
   clear: both;
-}
-
-.spriteimg {
-  display: inline-block;
-  background: url(https://economictimes.indiatimes.com/photo/80266843.cms)
-    no-repeat;
-  background-size: 800px;
-}
-
-.spriteimg.facbook {
-  width: 40px;
-  height: 40px;
-  background-position: 4px -288px;
-}
-
-.spriteimg.linkdin {
-  width: 40px;
-  height: 40px;
-  background-position: -47px -288px;
-}
-
-.spriteimg.twit {
-  width: 40px;
-  height: 40px;
-  background-position: -98px -288px;
-}
-
-.spriteimg.inst {
-  width: 40px;
-  height: 40px;
-  background-position: -149px -288px;
-}
-
-.spriteimg.contact {
-  width: 24px;
-  height: 29px;
-  background-position: -91px -533px;
-}
-
-.spriteimg.moblie {
-  width: 31px;
-  height: 21px;
-  background-position: -136px -589px;
-}
-
-.spriteimg.emails {
-  width: 35px;
-  height: 34px;
-  background-position: 3px -543px;
-}
-
-.spriteimg.cntcts {
-  width: 33px;
-  height: 33px;
-  background-position: -51px -590px;
-}
-
-.scrlbar::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  background-color: #f5f5f5;
-}
-
-.scrlbar::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-  background-color: #f5f5f5;
-}
-
-.scrlbar::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  background-color: #555;
 }
 
 .seprator {
@@ -484,7 +414,6 @@ hidden {
   font-size: 24px;
   line-height: 1.27;
   position: relative;
-  /*color: #000;*/
   padding: 10px 10px;
   position: relative;
   background: none;
@@ -545,7 +474,6 @@ hidden {
 }
 
 .collesped_menu .navbar-nav li .homeHeader.regfixbtn {
-  /*display: none;*/
   background-color: #da2337;
   padding: 4px 20px;
   color: #ffffff;
