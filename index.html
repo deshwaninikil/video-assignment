@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video Gallery</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/simplePagination.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!------------------------- Start Navbar Section ---------------------------->
+    <header class="fixednav">
+        <nav class="navbar">
+            <div class="headermain dp_row dp_justifycontentspcbet aligncenter">
+                <div class="navbar-header">
+                    <div class="menubtnbox">
+                        <div class="menubtn">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                    </div>
+                    <div class="menulogobox">
+                        <a class="navbar-brand" href="Home.html">
+                            <img src="https://economictimes.indiatimes.com/photo/98356422.cms" /></a>
+                    </div>
+                </div>
+                <div class="collesped_menu">
+                    <div class="mobbg">
+                        <div class="menuOpenlogobox">
+                            <a class="navbar-brand" href="Home.html">
+                                <img src="https://economictimes.indiatimes.com/photo/98356422.cms" /></a>
+                        </div>
+                        <ul class="nav navbar-nav dp_row dp_justifycontentcenter aligncenter">
+                            <li class="homebtn">
+                                <a class="homeHeader redtab" href="index.html">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="homeHeader redtab scrollnavTo" href="#video">Video</a>
+                            </li>
+                            <li>
+                                <a class="homeHeader redtab scrollnavTo" href="#Contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!------------------------- End Navbar Section ------------------------------>
+    <div class="homePagecolor">
+        <!------------------------- Start Header Section ---------------------------->
+        <section class="mainbanner" id="bannerMain">
+            <img class="topBanner mobview" src="https://economictimes.indiatimes.com/photo/92701902.cms"
+                alt="mobileBanner" />
+            <img class="topBanner deskview" src="https://economictimes.indiatimes.com/photo/92701877.cms"
+                alt="desktopBanner" />
+            <div class="bannerMoney">
+                <h3 class="heading">NewTube</h3>
+                <h2 class="bannerMainheading">Video Gallery</h2>
+                <p class="bannerPara">It helps viewers understand what to expect from your brand and can be used to
+                    explain why they should subscribe to your channel.
+                </p>
+                <h4 class="bannerYellow">09 MAY 2022</h4>
+            </div>
+        </section>
+        <!------------------------- End Header Section ------------------------------>
+        <!-------------------------- Start Pagination Video ------------------------->
+
+        <section id="video">
+            <div class="dp_container pdngtb70">
+                <div class="dp_row dp_justifycontentcenter">
+
+                    <h2 class="heading">Video Gallery</h2>
+                </div>
+
+                <div class="dp_row dp_justifycontentcenter">
+                    <h3 class="commanpara">Search here: </h3> <input type="text" id="search"
+                        placeholder="Search Videos">
+                </div>
+
+                <div id="video-container" class="videocontainer"></div>
+
+
+                <div class="dp_row dp_justifycontentcenter">
+                    <div id="pagination-container">
+                        <button id="prev-button" class="previousBtn">Previous</button>
+                        <span id="page-numbers"></span>
+                        <button id="next-button" class="nextBtn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------------- End Pagination Video --------------------------->
+        <!------------------------- Start Get In Touch Section ---------------------->
+        <section class="cntacdetailsec" id="Contact">
+            <div class="dp_container pdngtb70 getTouch">
+
+                <h2 class="heading btncenter">Get in touch</h2>
+                <p class="commanpara btncenter">Need something, ready to you.</p>
+
+                <div class="dp_row dp_justifycontentcenter contactdetailsec">
+
+                    <div class="cntdetailsbox dp_row dp_rowdir_clmn dp_justifycontentcenter">
+
+                        <div class="cntdetailsboxmain">
+
+                            <div class="cntdetailsboxsec">
+                                <div class="names">
+                                    <h3 class="managerName">Nikil Deshwani</h3>
+                                    <p class="generalmanager">Frontend Developer in Times Internet</p>
+                                </div>
+                                <div class="emails dp_row aligncenter">
+                                    <div class="spriteimg contact"></div>
+                                    <a href="nikildeshwani@gmail.com">
+                                        nikildeshwani@gmail.com</a>
+                                </div>
+                                <div class="telph dp_row aligncenter">
+                                    <div class="spriteimg moblie"></div>
+                                    <a href="tel:+919099203274">
+                                        +91
+                                        9099203274</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!------------------------- End Get In Touch Section ---------------------->
+    </div>
+    <!------------------------- Star Footer  Section -------------------------->
+    <section class="dpfooter">
+        <div class="bottombar deskview">
+            <ul class="dp_row aligncenter">
+                <li>
+                    <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Privacy
+                        Policy</a>
+                </li>
+                <li>
+                    <a href="https://nikil-deshwani-portfolio.netlify.app/" _blank">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Program
+                        T&amp;C</a>
+                </li>
+            </ul>
+            <p class="cpy">
+                Copyright © 2022 Nikil, Deshwani &amp; Co. Ltd. All rights reserved. For
+                reprint rights:
+                <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Nikil Deshwani</a>
+            </p>
+        </div>
+        <div class="bottombar mobview footerMobile">
+            <div class="dp_row aligncenter terms mobBottomLine">
+                <p>
+                    <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Privacy
+                        Policy</a>
+                </p>
+                <p>
+                    <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Terms of Use</a>
+                    <a class="borderTc" href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Program
+                        T&amp;C</a>
+                </p>
+            </div>
+            <p class="cpy">
+                Copyright © 2022 Nikil, Deshwani &amp; Co. Ltd. All rights reserved. For
+                reprint rights:
+                <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Nikil DDeshwani</a>
+            </p>
+        </div>
+    </section>
+
+    <!------------------------- End Footer  Section --------------------------->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
