@@ -556,7 +556,9 @@ hidden {
   margin: 0;
 }
 
-/*------------------------------------------End Banner sec Css-------------f-----------------------------*/
+/*------------------------------------------End Banner sec Css------------------------------------------*/
+
+/*----------------------------------------- Start Pagination Video Section Css------------------------- */
 
 .videocontainer {
   display: grid;
@@ -591,20 +593,31 @@ input[type="text"]#search:focus {
 }
 .previousBtn,
 .nextBtn {
+  background-color: #18003f;
+  border: none;
   color: white;
-  background-color: cornflowerblue;
-  width: 90px;
-  height: 27px;
-  border: 1px solid black;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 .previousBtn:disabled,
 .nextBtn:disabled {
-  background-color: lightblue;
+  background-color: lightgray;
+}
+.previousBtn:hover,
+.nextBtn:hover {
+  background-color: #000;
 }
 span#page-numbers button {
   background-color: lightcyan;
 }
-/*-----------------------start get in touch -----------------------------*/
+/*----------------------------------------- End Pagination Video Section Css------------------------- */
+
+/*------------------------------------------ Start get in touch --------------------------------------*/
+
 .getTouch {
   position: relative;
 }
