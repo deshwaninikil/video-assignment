@@ -2,196 +2,658 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Video Gallery</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&amp;display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/simplePagination.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/CSS/Common.css" />
+  <link rel="stylesheet" href="/CSS/slick.css" />
+  <link rel="stylesheet" href="/CSS/slick_theme.css" />
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="JS/slick.js"></script>
+  <script src="/JS/index.js" type="text/javascript" defer></script>
 </head>
 
+
+
+
 <body>
-    <div class="mainContainer">
-        <!------------------------- Start Navbar Section ---------------------------->
-        <header class="fixednav">
-            <nav class="navbar">
-                <div class="headermain dp_row dp_justifycontentspcbet aligncenter">
-                    <div class="navbar-header">
-                        <div class="menubtnbox">
-                            <div class="menubtn">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </div>
-                        </div>
-                        <div class="menulogobox">
-                            <a class="navbar-brand" href="Home.html">
-                                <img src="https://economictimes.indiatimes.com/photo/98356422.cms" /></a>
-                        </div>
-                    </div>
-                    <div class="collesped_menu">
-                        <div class="mobbg">
-                            <div class="menuOpenlogobox">
-                                <a class="navbar-brand" href="Home.html">
-                                    <img src="https://economictimes.indiatimes.com/photo/98356422.cms" /></a>
-                            </div>
-                            <ul class="nav navbar-nav dp_row dp_justifycontentcenter aligncenter">
-                                <li class="homebtn">
-                                    <a class="homeHeader redtab" href="index.html">
-                                        <span>Home</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="homeHeader redtab scrollnavTo" href="#video">Video</a>
-                                </li>
-                                <li>
-                                    <a class="homeHeader redtab scrollnavTo" href="#Contact">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!------------------------- End Navbar Section ------------------------------>
-        <div class="homePagecolor">
-            <!------------------------- Start Header Section ---------------------------->
-            <section class="mainbanner" id="bannerMain">
-                <img class="topBanner mobview" src="https://economictimes.indiatimes.com/photo/92701902.cms"
-                    alt="mobileBanner" />
-                <img class="topBanner deskview" src="https://economictimes.indiatimes.com/photo/92701877.cms"
-                    alt="desktopBanner" />
-                <div class="bannerMoney">
-                    <h3 class="heading">NewTube</h3>
-                    <h2 class="bannerMainheading">Video Gallery</h2>
-                    <p class="bannerPara">It helps viewers understand what to expect from your brand and can be used to
-                        explain why they should subscribe to your channel.
-                    </p>
-                    <h4 class="bannerYellow">09 MAY 2022</h4>
-                </div>
-            </section>
-            <!------------------------- End Header Section ------------------------------>
-            <!-------------------------- Start Pagination Video ------------------------->
-
-            <section id="video">
-                <div class="dp_container pdngtb70">
-                    <div class="dp_row dp_justifycontentcenter">
-
-                        <h2 class="heading">Video Gallery</h2>
-                    </div>
-
-                    <div class="dp_row dp_justifycontentcenter">
-                        <h3 class="commanpara">Search here: </h3> <input type="text" id="search"
-                            placeholder="Search Videos">
-                    </div>
-
-                    <div id="video-container" class="videocontainer"></div>
-
-
-                    <div class="dp_row dp_justifycontentcenter">
-                        <div id="pagination-container">
-                            <button id="prev-button" class="previousBtn">Previous</button>
-                            <span id="page-numbers"></span>
-                            <button id="next-button" class="nextBtn">Next</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-------------------------- End Pagination Video --------------------------->
-            <!------------------------- Start Get In Touch Section ---------------------->
-            <section class="cntacdetailsec" id="Contact">
-                <div class="dp_container pdngtb70 getTouch">
-
-                    <h2 class="heading btncenter">Get in touch</h2>
-                    <p class="commanpara btncenter">Need something, ready to you.</p>
-
-                    <div class="dp_row dp_justifycontentcenter contactdetailsec">
-
-                        <div class="cntdetailsbox dp_row dp_rowdir_clmn dp_justifycontentcenter">
-
-                            <div class="cntdetailsboxmain">
-
-                                <div class="cntdetailsboxsec">
-                                    <div class="names">
-                                        <h3 class="managerName">Nikil Deshwani</h3>
-                                        <p class="generalmanager">Frontend Developer in Times Internet</p>
-                                    </div>
-                                    <div class="emails dp_row aligncenter">
-                                        <div class="spriteimg contact"></div>
-                                        <a href="nikildeshwani@gmail.com">
-                                            nikildeshwani@gmail.com</a>
-                                    </div>
-                                    <div class="telph dp_row aligncenter">
-                                        <div class="spriteimg moblie"></div>
-                                        <a href="tel:+919099203274">
-                                            +91
-                                            9099203274</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-            <!------------------------- End Get In Touch Section ---------------------->
+  <div class="mainContainer">
+    <!------------------------- Start Navbar Section ---------------------------->
+    <header class="fixednav">
+      <nav class="navbar">
+        <div class="headermain dp_row dp_justifycontentspcbet aligncenter">
+          <div class="navbar-header">
+            <div class="menubtnbox">
+              <div class="menubtn">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </div>
+            </div>
+            <div class="menulogobox">
+              <a class="navbar-brand" href="Home.html">
+                <img src="https://economictimes.indiatimes.com/photo/98356422.cms" /></a>
+            </div>
+          </div>
+          <div class="collesped_menu">
+            <div class="mobbg">
+              <div class="menuOpenlogobox">
+                <a class="navbar-brand" href="Home.html">
+                  <img src="https://economictimes.indiatimes.com/photo/98356422.cms" /></a>
+              </div>
+              <ul class="nav navbar-nav dp_row dp_justifycontentcenter aligncenter">
+                <li class="homebtn">
+                  <a class="homeHeader redtab" href="Home.html">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="homeHeader redtab scrollnavTo" href="#about">About</a>
+                </li>
+                <li>
+                  <a class="homeHeader redtab scrollnavTo" href="#Knowledge">Knowledge Session</a>
+                </li>
+                <li>
+                  <a class="homeHeader redtab scrollnavTo" href="#video">Video Gallery</a>
+                </li>
+                <li>
+                  <a class="homeHeader redtab scrollnavTo" href="#Contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!------------------------- Star Footer  Section -------------------------->
-        <section class="dpfooter">
-            <div class="bottombar deskview">
-                <ul class="dp_row aligncenter">
-                    <li>
-                        <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Privacy
-                            Policy</a>
-                    </li>
-                    <li>
-                        <a href="https://nikil-deshwani-portfolio.netlify.app/" _blank">Terms of Use</a>
-                    </li>
-                    <li>
-                        <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Program
-                            T&amp;C</a>
-                    </li>
-                </ul>
-                <p class="cpy">
-                    Copyright © 2022 Nikil, Deshwani &amp; Co. Ltd. All rights reserved. For
-                    reprint rights:
-                    <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Nikil Deshwani</a>
-                </p>
-            </div>
-            <div class="bottombar mobview footerMobile">
-                <div class="dp_row aligncenter terms mobBottomLine">
-                    <p>
-                        <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Privacy
-                            Policy</a>
-                    </p>
-                    <p>
-                        <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Terms of Use</a>
-                        <a class="borderTc" href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Program
-                            T&amp;C</a>
-                    </p>
-                </div>
-                <p class="cpy">
-                    Copyright © 2022 Nikil, Deshwani &amp; Co. Ltd. All rights reserved. For
-                    reprint rights:
-                    <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Nikil DDeshwani</a>
-                </p>
-            </div>
-        </section>
+      </nav>
+    </header>
+    <!------------------------- End Navbar Section ------------------------------>
+    <!------------------------- Start Header Section ---------------------------->
+    <section class="mainbanner" id="bannerMain">
 
-        <!------------------------- End Footer  Section --------------------------->
+
+      <img class="topBanner mobview" src="https://economictimes.indiatimes.com/photo/92701902.cms" alt="mobileBanner">
+
+      </img>
+
+      <img class="topBanner deskview" src="https://economictimes.indiatimes.com/photo/92701877.cms" alt="desktopBanner">
+
+      </img>
+
+      <div class="bannerMoney">
+        <h3 class="heading">NewTube</h3>
+        <h2 class="bannerMainheading">Video Gallery</h2>
+        <p class="bannerPara">It helps viewers understand what to expect from your brand and can be used to explain why
+          they should subscribe to your channel.
+        </p>
+        <h4 class="bannerYellow">09 MAY 2023</h4>
+        <div class="open-button">
+          <a class="register_btn"> Register</a>
+        </div>
+      </div>
+    </section>
+    <!------------------------- End Header Section ------------------------------>
+    <!------------------------- Start Registartion Popup ------------------------>
+    <div class="registerFormPopUp" role="dialog">
+      <div class="modal-dialog registerFormDialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="closeregpop" data-dismiss="modal"><img
+                src="https://economictimes.indiatimes.com/photo/78144068.cms"></img></button>
+            <div class="expressIntrstMain">
+              <div class="dp_row registerFormPopUpMainBox dpLocation">
+                <h2 class="reg-title">Registration</h2>
+                <input type="hidden" name="projectId" class="projectId" value="187" />
+                <p class="thankmsg" style="display: none;">Thank you for showing your interest.</p>
+                <input type="hidden" class="errormsg" name="errormsg"
+                  value="Oops There was some error while submitting your form. Please refresh the browser window and try again.." />
+                <div class="resiterationElements">
+                  <div class="form-group formRow">
+                    <label class="formLabel">Name<span class="labelIcon">*</span></label>
+                    <input type="text" class="formRow--input js-input" name="name" id="Name" data-label="Name" rel="txt"
+                      data-rel="required" maxlength="200" />
+                    <span class="errormsg" style="display: none;"></span>
+                  </div>
+                  <div class="form-group formRow">
+                    <label class="formLabel">Email<span class="labelIcon">*</span></label>
+                    <input type="text" class="registerEmail formRow--input js-input email" name="emailId" id="emailId"
+                      data-label="Email" rel="email" data-rel="required" maxlength="200" />
+                    <span class="errormsg" style="display: none;"></span>
+                  </div>
+                  <div class="form-group formRow">
+                    <label class="formLabel">Phone No</label>
+                    <input type="text" data-label="Phone Number" autocomplete="off" maxlength="10" data-rel="required"
+                      rel="phoneno" name="number" id="number" />
+                    <span class="errormsg" style="display: none;"></span>
+                  </div>
+                  <div class="form-group formRow">
+                    <label class="formLabel">Organization<span class="labelIcon">*</span></label>
+                    <input type="text" class="" name="Organization" data-label="Organization" rel="Urganization"
+                      data-rel="required" maxlength="200" />
+                    <span class="errormsg" style="display: none;"></span>
+                  </div>
+                  <div class="form-group formRow">
+                    <label class="formLabel">Designation</label>
+                    <input type="text" class="" name="Designation" id="designation" data-label="Designation"
+                      rel="Designation" data-rel="required" maxlength="200" />
+                    <span class="errormsg" style="display: none;"></span>
+                  </div>
+                </div>
+                <div class="related_checkboxes">
+                  <div class="checkboxn">
+                    <input type="checkbox" class="checkbox" name="tandc" id="contn" checked="true" />
+                    <label for="contn">I agree with the <a target="_blank"
+                        href="https://economictimes.indiatimes.com/photo/91441046.cms">Terms of Use</a> and <a
+                        target="_blank" href="https://economictimes.indiatimes.com/privacypolicy.cms">Privacy
+                        Policy</a></label>
+                    <span class="errormsg" style="display: none;"></span>
+                  </div>
+                  <div class="checkboxn">
+                    <input type="checkbox" name="agreeToShare" class="checkbox" id="agreetnc11" checked="true" />
+                    <label for="agreetnc11">I wish to receive communication from Economictimes.com and its partners for
+                      future events and programs.</label>
+                  </div>
+                </div>
+                <div class="btnContainer">
+                  <a href="javascript:void(0);" class="registerBtn0 regPopbbutton">Register</a>
+                </div>
+              </div>
+            </div>
+            <div class="resMsg"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="js/index.js"></script>
+    <!------------------------- End Registartion Popup ------------------------>
+    <!------------------------- Start Partner Section ------------------------->
+    <section class="partneraftrbnerHm">
+      <div class="dp_container pdngtb50">
+        <div class="partner parnersldrmain">
+          <div class="dp_row dp_justifycontentcenter">
+            <div class="item">
+              <div>
+                <div class="dp_row dp_justifycontentcenter aligncenter partnImgBox">
+                  <img
+                    src="https://economictimes.indiatimes.com/thumb/msid-93001411,width-188,imgsize-18900,resizemode-4/.jpg"
+                    alt="" />
+                </div>
+                <h4>Associate Partner</h4>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="dp_row dp_justifycontentcenter aligncenter partnImgBox">
+                  <img
+                    src="https://economictimes.indiatimes.com/thumb/msid-93119925,width-188,imgsize-51730,resizemode-4/.jpg"
+                    alt="" />
+                </div>
+                <h4>Associate Partner</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!------------------------- End Partner Section --------------------------->
+  <!------------------------- Start Key initiatives Section ----------------->
+  <section class="keySession" id="Knowledge">
+    <div class="dp_container pdngtb70 tracksThemes">
+      <div class="btncenter">
+        <h2 class="heading keyHeading">Video Gallery 2023</h2>
+      </div>
+      <div class=" dp_justifycontentcenter contactdetailsec">
+        <div class="partnerMoneyMain Maingap">
+          <div class="partnerMoney dp_row">
+            <h4 class="blackHeading">Knowledge Sessions</h4>
+            <p class="keypara">The text on your channel’s About page. It helps viewers understand what to expect from
+              your brand and can be used to explain why they should subscribe to your channel.</p>
+          </div>
+          <div class="partnerMoneybottom">
+            <section class="" id="mediacvrage">
+              <div class="keybottom">
+                <div class="keySliderMain">
+                  <div class="keySlider">
+                    <div class="mediadesign">
+                      <div class="imgiconbox">
+                        <div class="mainwidth">
+                          <a class="threeboxs vidPop" href="javascript:void(0);" data-src="video1.mp4"
+                            data-title="Title 1">
+                            <img src="https://economictimes.indiatimes.com/photo/93347501.cms" alt="Title 1"></img>
+                            <!-- <img class="playIcon centretopleft"
+                              src="https://economictimes.indiatimes.com/photo/92277242.cms"></img> -->
+                          </a>
+                          <div class="cntBox">
+                            <div class="dp_row aligncenter dp_justifycontentcenter socalIcons">
+                              <a class="fb popupopen"
+                                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Feconomictimes.indiatimes.com%252Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%252Fvideoshow%252F93161792.cms&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"
+                                rel="nofollow" target="_blank">
+                                <img src="https://economictimes.indiatimes.com/photo/92278266.cms"></img>
+                              </a>
+                              <a class="twt popupopen"
+                                href="https://twitter.com/intent/tweet?url=https://economictimes.indiatimes.com/et-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance/videoshow/93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278261.cms"></img>
+                              </a>
+                              <a class="lnkdn popupopen"
+                                href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Feconomictimes.indiatimes.com%2Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%2Fvideoshow%2F93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278265.cms"></img>
+                              </a>
+                              <a class="wtsup whatsap" data-text="Title 1"
+                                href="https://api.whatsapp.com//send?text=ET%20FOM%20%7C%20Fintech%20for%20good%3A%20Looking%20beyond%20profits%20and%20targets%20%7C%20Nitin%20Kamath%20https%3A%2F%2Feconomictimes.indiatimes.com%2Fet-fom-fintech-for-good-looking-beyond-profits-and-targets-nitin-kamath%2Fvideoshow%2F93130861.cms"
+                                data-url="https://example.com/video1.mp4" data-action="share/whatsapp/share">
+                                <img src="https://economictimes.indiatimes.com/photo/92278263.cms"></img>
+                              </a>
+                            </div>
+                            <p class="popupPara">ET Future of Money Summit: Rajesh Bansal, CEO, RBIH on enabling
+                              frictionless finance</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mediadesign">
+                      <div class="imgiconbox">
+                        <div class="mainwidth">
+                          <a class="threeboxs vidPop" href="javascript:void(0);" data-src="video1.mp4"
+                            data-title="Title 1">
+                            <img src="https://economictimes.indiatimes.com/photo/93347555.cms" alt="Title 1"></img>
+                            <!-- <img class="playIcon centretopleft"
+                              src="https://economictimes.indiatimes.com/photo/92277242.cms"></img> -->
+                          </a>
+                          <div class="cntBox">
+                            <div class="dp_row aligncenter dp_justifycontentcenter socalIcons">
+                              <a class="fb popupopen"
+                                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Feconomictimes.indiatimes.com%252Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%252Fvideoshow%252F93161792.cms&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"
+                                rel="nofollow" target="_blank">
+                                <img src="https://economictimes.indiatimes.com/photo/92278266.cms"></img>
+                              </a>
+                              <a class="twt popupopen"
+                                href="https://twitter.com/intent/tweet?url=https://economictimes.indiatimes.com/et-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance/videoshow/93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278261.cms"></img>
+                              </a>
+                              <a class="lnkdn popupopen"
+                                href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Feconomictimes.indiatimes.com%2Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%2Fvideoshow%2F93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278265.cms"></img>
+                              </a>
+                              <a class="wtsup whatsap" data-text="Title 1"
+                                href="https://api.whatsapp.com//send?text=ET%20FOM%20%7C%20Fintech%20for%20good%3A%20Looking%20beyond%20profits%20and%20targets%20%7C%20Nitin%20Kamath%20https%3A%2F%2Feconomictimes.indiatimes.com%2Fet-fom-fintech-for-good-looking-beyond-profits-and-targets-nitin-kamath%2Fvideoshow%2F93130861.cms"
+                                data-url="https://example.com/video1.mp4" data-action="share/whatsapp/share">
+                                <img src="https://economictimes.indiatimes.com/photo/92278263.cms"></img>
+                              </a>
+                            </div>
+                            <p class="popupPara">ET FOM | Fintech for good: Looking beyond profits and targets | Nitin
+                              Kamath</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mediadesign">
+                      <div class="imgiconbox">
+                        <div class="mainwidth">
+                          <a class="threeboxs vidPop" href="javascript:void(0);" data-src="video1.mp4"
+                            data-title="Title 1">
+                            <img src="https://economictimes.indiatimes.com/photo/93347687.cms" alt="Title 1"></img>
+                            <!-- <img class="playIcon centretopleft"
+                              src="https://economictimes.indiatimes.com/photo/92277242.cms"></img> -->
+                          </a>
+                          <div class="cntBox">
+                            <div class="dp_row aligncenter dp_justifycontentcenter socalIcons">
+                              <a class="fb popupopen"
+                                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Feconomictimes.indiatimes.com%252Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%252Fvideoshow%252F93161792.cms&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"
+                                rel="nofollow" target="_blank">
+                                <img src="https://economictimes.indiatimes.com/photo/92278266.cms"></img>
+                              </a>
+                              <a class="twt popupopen"
+                                href="https://twitter.com/intent/tweet?url=https://economictimes.indiatimes.com/et-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance/videoshow/93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278261.cms"></img>
+                              </a>
+                              <a class="lnkdn popupopen"
+                                href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Feconomictimes.indiatimes.com%2Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%2Fvideoshow%2F93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278265.cms"></img>
+                              </a>
+                              <a class="wtsup whatsap" data-text="Title 1"
+                                href="https://api.whatsapp.com//send?text=ET%20FOM%20%7C%20Fintech%20for%20good%3A%20Looking%20beyond%20profits%20and%20targets%20%7C%20Nitin%20Kamath%20https%3A%2F%2Feconomictimes.indiatimes.com%2Fet-fom-fintech-for-good-looking-beyond-profits-and-targets-nitin-kamath%2Fvideoshow%2F93130861.cms"
+                                data-url="https://example.com/video1.mp4" data-action="share/whatsapp/share">
+                                <img src="https://economictimes.indiatimes.com/photo/92278263.cms"></img>
+                              </a>
+                            </div>
+                            <p class="popupPara">ET FOM | The transformations shaping the future of banking | Natasha
+                              Patel</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mediadesign">
+                      <div class="imgiconbox">
+                        <div class="mainwidth">
+                          <a class="threeboxs vidPop" href="javascript:void(0);" data-src="video1.mp4"
+                            data-title="Title 1">
+                            <img src="https://economictimes.indiatimes.com/photo/93130861.cms" alt="Title 1"></img>
+                            <!-- <img class="playIcon centretopleft"
+                              src="https://economictimes.indiatimes.com/photo/92277242.cms"></img> -->
+                          </a>
+                          <div class="cntBox">
+                            <div class="dp_row aligncenter dp_justifycontentcenter socalIcons">
+                              <a class="fb popupopen"
+                                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Feconomictimes.indiatimes.com%252Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%252Fvideoshow%252F93161792.cms&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"
+                                rel="nofollow" target="_blank">
+                                <img src="https://economictimes.indiatimes.com/photo/92278266.cms"></img>
+                              </a>
+                              <a class="twt popupopen"
+                                href="https://twitter.com/intent/tweet?url=https://economictimes.indiatimes.com/et-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance/videoshow/93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278261.cms"></img>
+                              </a>
+                              <a class="lnkdn popupopen"
+                                href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Feconomictimes.indiatimes.com%2Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%2Fvideoshow%2F93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278265.cms"></img>
+                              </a>
+                              <a class="wtsup whatsap" data-text="Title 1"
+                                href="https://api.whatsapp.com//send?text=ET%20FOM%20%7C%20Fintech%20for%20good%3A%20Looking%20beyond%20profits%20and%20targets%20%7C%20Nitin%20Kamath%20https%3A%2F%2Feconomictimes.indiatimes.com%2Fet-fom-fintech-for-good-looking-beyond-profits-and-targets-nitin-kamath%2Fvideoshow%2F93130861.cms"
+                                data-url="https://example.com/video1.mp4" data-action="share/whatsapp/share">
+                                <img src="https://economictimes.indiatimes.com/photo/92278263.cms"></img>
+                              </a>
+                            </div>
+                            <p class="popupPara">ET FOM | Traversing CoinDCX’s Journey as a Wealthtech Destination |
+                              Sumit Gupta</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mediadesign">
+                      <div class="imgiconbox">
+                        <div class="mainwidth">
+                          <a class="threeboxs vidPop" href="javascript:void(0);" data-src="video1.mp4"
+                            data-title="Title 1">
+                            <img src="https://economictimes.indiatimes.com/photo/93161792.cms" alt="Title 1"></img>
+                            <!-- <img class="playIcon centretopleft"
+                              src="https://economictimes.indiatimes.com/photo/92277242.cms"></img> -->
+                          </a>
+                          <div class="cntBox">
+                            <div class="dp_row aligncenter dp_justifycontentcenter socalIcons">
+                              <a class="fb popupopen"
+                                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Feconomictimes.indiatimes.com%252Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%252Fvideoshow%252F93161792.cms&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"
+                                rel="nofollow" target="_blank">
+                                <img src="https://economictimes.indiatimes.com/photo/92278266.cms"></img>
+                              </a>
+                              <a class="twt popupopen"
+                                href="https://twitter.com/intent/tweet?url=https://economictimes.indiatimes.com/et-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance/videoshow/93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278261.cms"></img>
+                              </a>
+                              <a class="lnkdn popupopen"
+                                href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Feconomictimes.indiatimes.com%2Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%2Fvideoshow%2F93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278265.cms"></img>
+                              </a>
+                              <a class="wtsup whatsap" data-text="Title 1"
+                                href="https://api.whatsapp.com//send?text=ET%20FOM%20%7C%20Fintech%20for%20good%3A%20Looking%20beyond%20profits%20and%20targets%20%7C%20Nitin%20Kamath%20https%3A%2F%2Feconomictimes.indiatimes.com%2Fet-fom-fintech-for-good-looking-beyond-profits-and-targets-nitin-kamath%2Fvideoshow%2F93130861.cms"
+                                data-url="https://example.com/video1.mp4" data-action="share/whatsapp/share">
+                                <img src="https://economictimes.indiatimes.com/photo/92278263.cms"></img>
+                              </a>
+                            </div>
+                            <p class="popupPara">ET FOM | Traversing CoinDCX’s Journey as a Wealthtech Destination</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mediadesign">
+                      <div class="imgiconbox">
+                        <div class="mainwidth">
+                          <a class="threeboxs vidPop" href="javascript:void(0);" data-src="video1.mp4"
+                            data-title="Title 1">
+                            <img src="https://economictimes.indiatimes.com/photo/93130626.cms" alt="Title 1"></img>
+                            <!-- <img class="playIcon centretopleft"
+                              src="https://economictimes.indiatimes.com/photo/92277242.cms"></img> -->
+                          </a>
+                          <div class="cntBox">
+                            <div class="dp_row aligncenter dp_justifycontentcenter socalIcons">
+                              <a class="fb popupopen"
+                                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Feconomictimes.indiatimes.com%252Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%252Fvideoshow%252F93161792.cms&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"
+                                rel="nofollow" target="_blank">
+                                <img src="https://economictimes.indiatimes.com/photo/92278266.cms"></img>
+                              </a>
+                              <a class="twt popupopen"
+                                href="https://twitter.com/intent/tweet?url=https://economictimes.indiatimes.com/et-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance/videoshow/93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278261.cms"></img>
+                              </a>
+                              <a class="lnkdn popupopen"
+                                href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Feconomictimes.indiatimes.com%2Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%2Fvideoshow%2F93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278265.cms"></img>
+                              </a>
+                              <a class="wtsup whatsap" data-text="Title 1"
+                                href="https://api.whatsapp.com//send?text=ET%20FOM%20%7C%20Fintech%20for%20good%3A%20Looking%20beyond%20profits%20and%20targets%20%7C%20Nitin%20Kamath%20https%3A%2F%2Feconomictimes.indiatimes.com%2Fet-fom-fintech-for-good-looking-beyond-profits-and-targets-nitin-kamath%2Fvideoshow%2F93130861.cms"
+                                data-url="https://example.com/video1.mp4" data-action="share/whatsapp/share">
+                                <img src="https://economictimes.indiatimes.com/photo/92278263.cms"></img>
+                              </a>
+                            </div>
+                            <p class="popupPara">ET FOM | Traversing CoinDCX’s Journey as a Wealthtech Destination</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mediadesign">
+                      <div class="imgiconbox">
+                        <div class="mainwidth">
+                          <a class="threeboxs vidPop" href="javascript:void(0);" data-src="video1.mp4"
+                            data-title="Title 1">
+                            <img src="https://economictimes.indiatimes.com/photo/93130626.cms" alt="Title 1"></img>
+                            <!-- <img class="playIcon centretopleft"
+                              src="https://economictimes.indiatimes.com/photo/92277242.cms"></img> -->
+                          </a>
+                          <div class="cntBox">
+                            <div class="dp_row aligncenter dp_justifycontentcenter socalIcons">
+                              <a class="fb popupopen"
+                                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Feconomictimes.indiatimes.com%252Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%252Fvideoshow%252F93161792.cms&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"
+                                rel="nofollow" target="_blank">
+                                <img src="https://economictimes.indiatimes.com/photo/92278266.cms"></img>
+                              </a>
+                              <a class="twt popupopen"
+                                href="https://twitter.com/intent/tweet?url=https://economictimes.indiatimes.com/et-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance/videoshow/93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278261.cms"></img>
+                              </a>
+                              <a class="lnkdn popupopen"
+                                href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Feconomictimes.indiatimes.com%2Fet-future-of-money-summit-rajesh-bansal-ceo-rbih-on-enabling-frictionless-finance%2Fvideoshow%2F93161792.cms">
+                                <img src="https://economictimes.indiatimes.com/photo/92278265.cms"></img>
+                              </a>
+                              <a class="wtsup whatsap" data-text="Title 1"
+                                href="https://api.whatsapp.com//send?text=ET%20FOM%20%7C%20Fintech%20for%20good%3A%20Looking%20beyond%20profits%20and%20targets%20%7C%20Nitin%20Kamath%20https%3A%2F%2Feconomictimes.indiatimes.com%2Fet-fom-fintech-for-good-looking-beyond-profits-and-targets-nitin-kamath%2Fvideoshow%2F93130861.cms"
+                                data-url="https://example.com/video1.mp4" data-action="share/whatsapp/share">
+                                <img src="https://economictimes.indiatimes.com/photo/92278263.cms"></img>
+                              </a>
+                            </div>
+                            <p class="popupPara">ET FOM | Traversing CoinDCX’s Journey as a Wealthtech Destination </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="keyLeftRightIcons"></div>
+                  <div class="keySliderbutton dp_row aligncenter dp_justifycontentcenter">
+                    <div class="keySliderDots"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!------------------------- End Key initiatives Section ------------------->
+  <!-------------------------- Start About Section -------------------------->
+  <section class="aboutprogrammaing" id="about">
+    <div class="dp_container pdngtb70">
+      <div class="about_program dp_rowdir_clmn aligncenter dp_row dp_flexwrap dp_justifycontentcenter">
+        <div class="dp_row dp_rowdir_clmn_onlyMob">
+          <div class="leftAboutBox samewidth">
+            <img
+              src="https://economictimes.indiatimes.com/thumb/msid-92701996,width-531,imgsize-1316033,resizemode-4/about.jpg"
+              alt="aboutImg" />
+            />
+          </div>
+
+          <div class="rightAboutBox samewidth">
+            <div class="missionparahead">
+              <h3 class="redheading">
+                About
+              </h3>
+              <h4 class="heading">Video Gallery 2023</h4>
+              <p class="commanpara">
+                Your choice of keywords is important for both YouTube channel and video descriptions.
+                The keywords in your descriptions will help YouTube’s algorithm understand, categorize, and surface your
+                content. The more specific the keywords are, the better.
+                For example, for a video about writing descriptions for YouTube videos, internet video text will be a
+                less useful keyword than YouTube video descriptions.
+              </p>
+              <p class="commanpara">
+                Google Trends, for example, will help you understand if a keyword you’re considering is trending. You
+                can also use the
+                tool to decide which keywords have a higher search volume.
+              </p>
+              <p class="commanpara">
+                To see how much potential a specific keyword has to show up in Google search results, simply… Google it.
+                If you notice YouTube videos at the top of the search results page, you’re on the right track!
+              </p>
+            </div>
+
+            <div class="about_head">
+              <h4>Industry Overview</h4>
+            </div>
+            <div class="about_info">
+              <ul>
+                <li>Once you’ve identified your keywords, it pays to know how to include them in your descriptions’
+                  text.</li>
+                <li>Aim to use two or three related keywords in each channel and video description. For videos, the main
+                  keyword should also appear in the title.</li>
+                <li>Repeat each keyword two to three times in the description to make them stand out to YouTube’s
+                  algorithm.</li>
+                <li>But avoid repeating the keywords too often, or you risk being penalized for keyword stuffing.</li>
+                <li>YouTube’s algorithm — and viewers — pay the most attention to this part of the description, so don’t
+                  wait until the end to say what your video or channel is about.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-------------------------- End About Section -------------------------->
+  <!-------------------------- Start Pagination Video ------------------------->
+
+  <section id="video">
+    <div class="dp_container pdngtb70">
+      <div class="dp_row dp_justifycontentcenter">
+
+        <h2 class="heading">Video Gallery</h2>
+      </div>
+
+      <div class="dp_row dp_justifycontentcenter">
+        <h3 class="commanpara">Search here: </h3> <input type="text" id="search" placeholder="Search Videos">
+      </div>
+
+      <div id="video-container" class="videocontainer"></div>
+
+
+      <div class="dp_row dp_justifycontentcenter">
+        <div id="pagination-container">
+          <button id="prev-button" class="previousBtn">Previous</button>
+          <span id="page-numbers"></span>
+          <button id="next-button" class="nextBtn">Next</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-------------------------- End Pagination Video --------------------------->
+  <!------------------------- Start Get In Touch Section ---------------------->
+  <section class="cntacdetailsec" id="Contact">
+    <div class="dp_container pdngtb70 getTouch">
+
+      <h2 class="heading btncenter">Get in touch</h2>
+      <p class="commanpara btncenter">Need something, ready to you.</p>
+
+      <div class="dp_row dp_justifycontentcenter contactdetailsec">
+
+        <div class="cntdetailsbox dp_row dp_rowdir_clmn dp_justifycontentcenter">
+
+          <div class="cntdetailsboxmain">
+
+            <div class="cntdetailsboxsec">
+              <div class="names">
+                <h3 class="managerName">Nikil Deshwani</h3>
+                <p class="generalmanager">Frontend Developer in Times Internet</p>
+              </div>
+              <div class="emails dp_row aligncenter">
+                <div class="spriteimg contact"></div>
+                <a href="nikildeshwani@gmail.com">
+                  nikildeshwani@gmail.com</a>
+              </div>
+              <div class="telph dp_row aligncenter">
+                <div class="spriteimg moblie"></div>
+                <a href="tel:+919099203274">
+                  +91
+                  9099203274</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!------------------------- End Get In Touch Section ---------------------->
+
+  <!------------------------- Star Footer  Section -------------------------->
+  <section class="dpfooter">
+    <div class="bottombar deskview">
+      <ul class="dp_row aligncenter">
+        <li>
+          <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Terms of Use</a>
+        </li>
+        <li>
+          <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Program T&amp;C</a>
+        </li>
+      </ul>
+      <p class="cpy">
+        Copyright © 2022 Nikil, Deshwani &amp; Co. Ltd. All rights reserved. For
+        reprint rights:
+        <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Nikil Deshwani</a>
+      </p>
+    </div>
+    <div class="bottombar mobview footerMobile">
+      <div class="dp_row aligncenter terms mobBottomLine">
+        <p>
+          <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Privacy Policy</a>
+        </p>
+        <p>
+          <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Terms of Use</a>
+          <a class="borderTc" href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Program
+            T&amp;C</a>
+        </p>
+      </div>
+      <p class="cpy">
+        Copyright © 2022 Nikil, Deshwani &amp; Co. Ltd. All rights reserved. For
+        reprint rights:
+        <a href="https://nikil-deshwani-portfolio.netlify.app/" target="_blank">Nikil DDeshwani</a>
+      </p>
+    </div>
+  </section>
+
+  <!------------------------- End Footer  Section --------------------------->
+  </div>
 </body>
 
 </html>
