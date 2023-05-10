@@ -37,6 +37,7 @@ body {
   --grapefruit-60: rgba(255, 94, 94, 0.6);
   --greyish-60: rgba(183, 179, 179, 0.6);
 }
+
 .mainContainer {
   max-width: 1500px;
   margin: 0 auto;
@@ -1561,6 +1562,7 @@ img.imagicon.centretopleft {
   padding: 20px;
   margin-right: 0;
 }
+
 input[type="text"]#search {
   width: 30%;
   height: 50px;
@@ -1582,6 +1584,7 @@ input[type="text"]#search:focus {
   border-color: #18003f;
   background-color: #fff;
 }
+
 .previousBtn,
 .nextBtn {
   background-color: #18003f;
@@ -1594,17 +1597,21 @@ input[type="text"]#search:focus {
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
 .previousBtn:disabled,
 .nextBtn:disabled {
   background-color: lightgray;
 }
+
 .previousBtn:hover,
 .nextBtn:hover {
   background-color: #000;
 }
+
 span#page-numbers button {
   background-color: lightcyan;
 }
+
 /*----------------------------------------- End Pagination Video Section Css------------------------- */
 
 /*------------------------------------Start Key initiatives Css-------------------------- ----------------*/
@@ -1887,6 +1894,7 @@ img.partnersImg {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .videocontainer .video {
   max-width: 350px;
   min-width: 350px;
@@ -1894,9 +1902,11 @@ img.partnersImg {
   margin-top: 30px;
   margin-right: 20px;
 }
+
 input[type="text"]#search {
   width: 60%;
 }
+
 /*---------------------------------------End Paggination Css--------------------------------------------*/
 /*------------------------------------------Start Footer Css--------------------------------------------*/
 
@@ -2563,6 +2573,15 @@ input[type="text"]#search {
     border-bottom: none;
   }
 
+  .previousBtn,
+  .nextBtn {
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 0;
+    border-radius: 5px;
+  }
+
   /*-------------------------- end session csss for mobile----------------------*/
 
   /*-------------------------- Start Registration Popup csss for mobile----------------------*/
@@ -3076,9 +3095,11 @@ input[type="text"]#search {
   .partner.parnersldrmain {
     margin: 0 0 0 70px;
   }
+
   .parnersldrmain .item {
     margin-right: 50px;
   }
+
   /*-------------------------End Partners Css for mobile----------------------------*/
 
   /*---------------------- Start  get in touch section for mobile-------------------*/
