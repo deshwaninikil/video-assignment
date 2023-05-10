@@ -306,7 +306,7 @@ $(document).ready(function () {
             .siblings(".keySliderbutton")
             .find(".keySliderDots"),
           appendArrows: $(this).siblings(".keyLeftRightIcons"),
-          autoplay: false,
+          autoplay: true,
           infinite: true,
           slidesToShow: 5.3,
           slidesToScroll: 1,
