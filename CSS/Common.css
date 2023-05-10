@@ -37,6 +37,10 @@ body {
   --grapefruit-60: rgba(255, 94, 94, 0.6);
   --greyish-60: rgba(183, 179, 179, 0.6);
 }
+.mainContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -1178,7 +1182,7 @@ img.imagicon.centretopleft {
 
 .bannerMoney {
   position: absolute;
-  bottom: 119px;
+  bottom: 8%;
   margin-left: 38px;
 }
 
