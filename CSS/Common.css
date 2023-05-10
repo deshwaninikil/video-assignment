@@ -2601,7 +2601,7 @@ input[type="text"]#search {
   }
 
   .bannerMoney {
-    bottom: 30%;
+    bottom: 15%;
     margin-left: 10px;
   }
 
@@ -3076,7 +3076,9 @@ input[type="text"]#search {
   .partner.parnersldrmain {
     margin: 0 0 0 70px;
   }
-
+  .parnersldrmain .item {
+    margin-right: 50px;
+  }
   /*-------------------------End Partners Css for mobile----------------------------*/
 
   /*---------------------- Start  get in touch section for mobile-------------------*/
@@ -3289,12 +3291,6 @@ input[type="text"]#search {
   }
 
   /*------------------------End Popup css for mobile----------------------------------------*/
-  /*-----------------Start Partner sec css for mobile -----------------*/
-  .parnersldrmain .item {
-    margin-right: 100px;
-  }
-
-  /*-----------------End Partner sec css for mobile-- -----------------*/
 
   /*------------------------Start Header css for mobile------------------------------------*/
   .bannerli {
