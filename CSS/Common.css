@@ -3073,13 +3073,8 @@ input[type="text"]#search {
   /*-------------------------End innovation for mobile -----------------------------*/
 
   /*-------------------------Start Partners Css for mobile--------------------------*/
-  .partnerCard {
-    padding: 100px 115px 101px;
-  }
-
-  .patnerMaincard {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+  .partner.parnersldrmain {
+    margin: 0 0 0 70px;
   }
 
   /*-------------------------End Partners Css for mobile----------------------------*/
